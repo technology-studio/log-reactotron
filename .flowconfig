@@ -1,29 +1,22 @@
 [ignore]
 <PROJECT_ROOT>/babel.config.js
 
-; Ignore "BUCK" generated dirs
-<PROJECT_ROOT>/\.buckd/
-
 ; Ignore unexpected extra "@providesModule"
 .*/node_modules/.*/node_modules/fbjs/.*
+<PROJECT_ROOT>/packages/.*/lib/.*
+<PROJECT_ROOT>/packages/.*/node_modules/.*
+<PROJECT_ROOT>/node_modules/.*
+!<PROJECT_ROOT>/node_modules/@txo.*
 <PROJECT_ROOT>/node_modules/@txo.*/node_modules/.*
-<PROJECT_ROOT>/node_modules/\([^@]\|@\([^t]\|t\([^x]\|x\([^o]\|$\)\|$\)\|$\)\|$\).*$
 
-; Ignore duplicate module providers
-; For RN Apps installed via npm, "Libraries" folder is inside
-; "node_modules/react-native" but in the source repo it is in the root
-.*/Libraries/react-native/React.js
 
-; Ignore polyfills
-.*/Libraries/polyfills/.*
-
-; Ignore metro
-.*/node_modules/metro/.*
-
-; Project based
-<PROJECT_ROOT>/__tests__/.*
+; Project base
+<PROJECT_ROOT>/coverage
 
 [include]
+
+[declarations]
+<PROJECT_ROOT>/node_modules/@txo.*
 
 [libs]
 flow-typed
@@ -43,8 +36,6 @@ module.name_mapper='^[./a-zA-Z0-9$_-]+\.\(bmp\|gif\|jpg\|jpeg\|png\|psd\|svg\|we
 module.name_mapper.extension='jpg' -> '<PROJECT_ROOT>/Stubs/ImageSourceStub.js.flow'
 module.name_mapper.extension='png' -> '<PROJECT_ROOT>/Stubs/ImageSourceStub.js.flow'
 
-module.file_ext=.android.js
-module.file_ext=.ios.js
 module.file_ext=.js
 module.file_ext=.jsx
 module.file_ext=.json
@@ -62,4 +53,4 @@ suppress_comment=\\(.\\|\n\\)*\\$FlowFixedInNextDeploy
 suppress_comment=\\(.\\|\n\\)*\\$FlowExpectedError
 
 [version]
-^0.86.0
+^0.123.0

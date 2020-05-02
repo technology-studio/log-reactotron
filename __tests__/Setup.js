@@ -6,7 +6,7 @@
  * @flow
  */
 
-'use strict'; // eslint-disable-line
+import './Config/LogConfig'
 
 // Mock your external modules here if needed
 // jest

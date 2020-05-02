@@ -13,7 +13,7 @@ import {
   type Level,
   type WriteLog,
   configManager,
-} from '@txo-peer-dep/log/Config'
+} from '@txo-peer-dep/log'
 
 export const LOGGER_KEY = 'reactotron'
 
