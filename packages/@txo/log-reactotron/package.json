@@ -1,6 +1,6 @@
 {
   "name": "@txo/log-reactotron",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Technology Studio - Log reactotron",
   "main": "lib/index.js",
   "typings": "index.d.ts",
@@ -25,9 +25,8 @@
     "build:watch:lib": "yarn babel src --source-maps --watch --out-dir lib --ignore **/__tests__/**  --verbose",
     "build:watch:flow": "yarn flow-copy-source --verbose -w -i '**/__tests__/**' src lib"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
-     "@txo-peer-dep/log": "^1.0.0"
+    "@txo-peer-dep/log": "^1.0.0"
   }
 }
