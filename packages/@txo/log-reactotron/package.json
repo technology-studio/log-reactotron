@@ -27,6 +27,6 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "@txo-peer-dep/log": "^1.0.0"
+    "@txo-peer-dep/log": "^3.0.0"
   }
 }
