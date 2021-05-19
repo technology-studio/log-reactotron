@@ -25,12 +25,6 @@
     "packages/@txo/*",
     "packages/@txo-peer-dep/*"
   ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run git-hook",
-      "pre-push": "yarn run git-hook"
-    }
-  },
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.14.3",
