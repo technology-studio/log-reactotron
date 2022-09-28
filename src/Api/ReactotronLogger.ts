@@ -3,10 +3,7 @@
  * @Date:   2017-12-27T11:05:06+01:00
  * @Email:  rostislav.simonik@technologystudio.sk
  * @Copyright: Technology Studio
- * @flow
- */
-
-'use strict'; // eslint-disable-line
+**/
 
 import {
   type Options,
@@ -17,15 +14,17 @@ import {
 
 export const LOGGER_KEY = 'reactotron'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const writeLog: WriteLog = (level: Level, name: string, namespace: string, message: string, payload?: any, options?: Options) => {
   // TODO: differentiate level by console.tron.send
-  (console: any).tron && (console: any).tron.display({
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  (console as any).tron && (console as any).tron.display({
     name: message,
     preview: name,
     value: {
       preview: name,
       value: configManager.config.payloadProcessor(payload),
     },
-    important: options && options.important,
+    important: options?.important,
   })
 }

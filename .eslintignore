@@ -1,5 +1,4 @@
-flow-typed
-babel.config.js
-packages/**/node_modules/**
-packages/**/lib/**
-*/**/index.d.ts
+commitlint.config.js
+jest.config.js
+lib
+release.config.js
