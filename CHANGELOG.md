@@ -1,3 +1,10 @@
+## [4.0.2](https://github.com/technology-studio/log-reactotron/compare/v4.0.1...v4.0.2) (2023-01-25)
+
+
+### Bug fixes
+
+* add missing main and typings paths to package.json ([#167](https://github.com/technology-studio/log-reactotron/issues/167)) ([d02c7c5](https://github.com/technology-studio/log-reactotron/commit/d02c7c50981ca5855068af72ba40397a9e454fec))
+
 ## [4.0.1](https://github.com/technology-studio/log-reactotron/compare/v4.0.0...v4.0.1) (2022-09-28)
 
 
