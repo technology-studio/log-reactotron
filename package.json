@@ -2,6 +2,8 @@
   "name": "@txo/log-reactotron",
   "version": "4.0.1",
   "description": "Technology Studio - Log reactotron",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/technology-studio/log-reactotron.git"
