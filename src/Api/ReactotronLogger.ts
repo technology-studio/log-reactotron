@@ -18,7 +18,7 @@ export const LOGGER_KEY = 'reactotron'
 export const writeLog: WriteLog = (level: Level, name: string, namespace: string, message: string, payload?: any, options?: Options) => {
   // TODO: differentiate level by console.tron.send
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (console as any).tron && (console as any).tron.display({
+  (Boolean((console as any).tron)) && (console as any).tron.display({
     name: message,
     preview: name,
     value: {
