@@ -14,11 +14,15 @@ import {
 
 export const LOGGER_KEY = 'reactotron'
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const writeLog: WriteLog = (level: Level, name: string, namespace: string, message: string, payload?: any, options?: Options) => {
+type ConsoleWithTron = Console & {
+  tron: {
+    display: (data: Record<string, unknown>) => void,
+  },
+}
+
+export const writeLog: WriteLog = (level: Level, name: string, namespace: string, message: string, payload?: unknown, options?: Options) => {
   // TODO: differentiate level by console.tron.send
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (Boolean((console as any).tron)) && (console as any).tron.display({
+  (Boolean((console as ConsoleWithTron).tron)) && (console as ConsoleWithTron).tron.display({
     name: message,
     preview: name,
     value: {
