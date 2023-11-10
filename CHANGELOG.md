@@ -1,3 +1,10 @@
+## [4.1.0](https://github.com/technology-studio/log-reactotron/compare/v4.0.3...v4.1.0) (2023-11-10)
+
+
+### Features
+
+* migrate to flat eslint config ([#408](https://github.com/technology-studio/log-reactotron/issues/408)) ([ae51a48](https://github.com/technology-studio/log-reactotron/commit/ae51a486ca9c4554f57e0f27a467ea55a6bccdfb))
+
 ## [4.0.3](https://github.com/technology-studio/log-reactotron/compare/v4.0.2...v4.0.3) (2023-09-20)
 
 
