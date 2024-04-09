@@ -1,6 +1,6 @@
 {
   "name": "@txo/log-reactotron",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "Technology Studio - Log reactotron",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",

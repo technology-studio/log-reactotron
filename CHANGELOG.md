@@ -1,3 +1,10 @@
+## [4.1.2](https://github.com/technology-studio/log-reactotron/compare/v4.1.1...v4.1.2) (2024-04-09)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo-peer-dep/log to ^4.0.4 ([ac7b6a7](https://github.com/technology-studio/log-reactotron/commit/ac7b6a77a58c728e232a5693708a47b237120e9e))
+
 ## [4.1.1](https://github.com/technology-studio/log-reactotron/compare/v4.1.0...v4.1.1) (2023-11-11)
 
 
