@@ -1,0 +1,5 @@
+[
+  "@typescript-eslint/no-magic-numbers",
+  "@typescript-eslint/max-params",
+  "@typescript-eslint/no-unsafe-type-assertion"
+]
